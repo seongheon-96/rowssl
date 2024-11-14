@@ -1,21 +1,16 @@
 # Rethinking Open-World Semi-Supervised Learning: Distribution Mismatch and Inductive Inference.
 
-**CVPR Workshop 2024:** This repository is the official implementation of [DTS]().
+**CVPR Workshop 2024:** This repository is the official implementation of [DTS](https://arxiv.org/abs/2405.20829).
 
 ## Introduction
-Open-world semi-supervised learning (OWSSL) extends conventional semi-supervised learning to open-world scenarios by taking account of novel categories in unlabeled datasets.
-Despite the recent advancements in OWSSL, the success often relies on the assumptions that
-1) labeled and unlabeled datasets share the same balanced class prior distribution, which does not generally hold in real-world applications, and
-2) unlabeled training datasets are utilized for evaluation, where such transductive inference might not adequately address challenges in the wild.
-In this paper, we aim to generalize OWSSL by addressing them.
-Our work suggests that practical OWSSL may require different training settings, evaluation methods, and learning strategies compared to those prevalent in the existing literature.
+Open-world semi-supervised learning (OWSSL) extends conventional semi-supervised learning to open-world scenarios by taking account of novel categories in unlabeled datasets. Despite the recent advancements in OWSSL, the success often relies on the assumptions that 1. labeled and unlabeled datasets share the same balanced class prior distribution, which does not generally hold in real-world applications, and 2. unlabeled training datasets are utilized for evaluation, where such transductive inference might not adequately address challenges in the wild. In this paper, we aim to generalize OWSSL by addressing them. Our work suggests that practical OWSSL may require different training settings, evaluation methods, and learning strategies compared to those prevalent in the existing literature.
 
 ## Method
 <div align=center>
-<img src="pipeline.pdf" width="800" >
+<img src="pipeline.png" width="800" >
 </div>
 
-Overview of the self-balanced co-advice contrastive framework (BaCon).
+Overview of the Density-based Temperature scaling and Soft pseudo-labeling (DTS).
 
 ## Environment
 Requirements:
@@ -38,17 +33,12 @@ We provide the specific train split of CIFAR-10 and CIFAR-100 with different imb
 ## Training
 ### CIFAR-10
 ```
-bash run_cifar10.sh
+bash scripts/run_cifar10_ours.sh
 ```
 
 ### CIFAR-100
 ```
-bash run_cifar100.sh
-```
-
-### ImageNet-100
-```
-bash run_imagenet100.sh
+bash scripts/run_cifar100_ours.sh
 ```
 
 ## Acknowledgments
