@@ -25,11 +25,6 @@ torchvision==0.11.1
 tqdm
 ```
 
-## Data
-We provide the specific train split of CIFAR-10 and CIFAR-100 with different imbalance ratios, please refer to ```data_uq_idxs``` for details. We also provide the source code in ```data/imagenet.py``` for splitting data to the proposed ROWSSL setting.
-
-
-
 ## Training
 ### CIFAR-10
 ```
@@ -42,7 +37,7 @@ bash scripts/run_cifar100_ours.sh
 ```
 
 ## Acknowledgments
-The codebase is largely built on [GCD](https://github.com/CVMI-Lab/SimGCD), [SimGCD](https://github.com/CVMI-Lab/SimGCD) and [BaCon](https://github.com/JianhongBai/BaCon). Thanks for their great work!
+The codebase is largely built on [GCD](https://github.com/CVMI-Lab/SimGCD), [SimGCD](https://github.com/CVMI-Lab/SimGCD) and [BaCon](https://github.com/JianhongBai/BaCon). We appreciate their excellent work, which made this project possible!
 
 ## Citation
 ```
