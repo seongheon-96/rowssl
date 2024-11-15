@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python -m model.train_ours_base \
+CUDA_VISIBLE_DEVICES=0 python -m model.train_ours \
     --dataset_name 'cifar100_LT' \
     --batch_size 128 \
     --grad_from_block 11 \
