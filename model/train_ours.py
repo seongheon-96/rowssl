@@ -14,12 +14,11 @@ from sklearn.linear_model import LinearRegression
 from data.augmentations import get_transform
 # from data.get_datasets import get_datasets, get_class_splits # bacon split
 from data.get_datasets import get_datasets, get_class_splits
-
 from util.general_utils import AverageMeter, init_experiment
 from util.cluster_and_log_utils import log_accs_from_preds
 from config import exp_root
 from model.model_ours import DINOHead, SupConLoss_2,info_nce_logits, info_nce_logits_tail, SupConLoss,DistillLoss4,DistillLoss4_var, DistillLoss,DistillLoss4_weight, ContrastiveLearningViewGenerator, get_params_groups
-from model.moco_cub import MoCo
+from model.moco_cifar import MoCo
 import matplotlib.pyplot as plt
 from copy import deepcopy
 
