@@ -26,10 +26,6 @@ tqdm
 ```
 
 ## Training
-### CIFAR-10
-```
-bash scripts/run_cifar10_ours.sh
-```
 
 ### CIFAR-100
 ```
